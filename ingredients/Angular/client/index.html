@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Here we are initializing our app on the HTML element, making it so that we can interact with the entire page -->
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- We are setting up basic navigation here so that we can make sure that the routes are working -->
+  <ul class="menu">
+    <li><a href="#!/">home</a></li>
+    <li><a href="#!/about">about</a></li>
+  </ul>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!--
+    This div below will be populated by whatever view we are currently on (dictated by the current route)
+  -->
+  <div ng-view></div>
+
+  <!-- Let's make sure to include angular and angular route from google's cdn -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <!-- Let's also make sure to include all of our files from our app -->
+  <script src="app.js"></script>
+  <script src="services/services.js"></script>
+  <script src="home/home.js"></script>
+  <script src="about/about.js"></script>
+</body>
+</html>

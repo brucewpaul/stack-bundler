@@ -1,0 +1,20 @@
+{
+  "name": "stack-bundler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/burly-bulls/stack-bundler.git",
+  "author": "Burly Bulls",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.15.2",
+    "child_process": "^1.0.2",
+    "express": "^4.14.0",
+    "ncp": "^2.0.0",
+    "lodash": "^4.17.2"
+  }
+}

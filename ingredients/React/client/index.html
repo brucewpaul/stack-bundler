@@ -1,0 +1,23 @@
+<!--
+This is the only file served from the server. This is the base of the Single Page Application (SPA)
+concept. All page routing is done on the client side, usually through React Router. In general,
+for an SPA, the client should not have to make a request to the server (Node w/ Express) to change the
+view.
+
+SPA: https://www.codeschool.com/beginners-guide-to-web-development/single-page-applications
+React Router: https://github.com/ReactTraining/react-router
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React App</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  </head>
+  <body>
+    <!-- All of the react components will render within the div below with the id of 'root' -->
+    <div id="root"></div>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
